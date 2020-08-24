@@ -1,0 +1,14 @@
+@mixin  very_bold {
+    font-weight: 900;
+}
+
+p {
+    text-transform: uppercase;
+
+    &.second {
+        font-size: 24px;
+        color: pink;
+        text-shadow: 2px 2px 4px #000;
+        @include very_bold;
+    }
+}
